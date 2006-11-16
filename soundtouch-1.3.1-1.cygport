@@ -1,0 +1,20 @@
+DESCRIPTION="Audio processing library for changing Tempo, Pitch and Playback Rates"
+HOMEPAGE="http://www.surina.net/soundtouch/"
+SRC_URI="${HOMEPAGE}/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/doc/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/aclocal/'
+
+CYGCONF_ARGS='--enable-shared'
+DOCS=COPYING.TXT
+HTMLDOCS=README.html
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	rm -fr ${D}/usr/doc/
+}
