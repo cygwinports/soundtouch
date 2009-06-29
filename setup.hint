@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libsoundtouch0
+requires: libsoundtouch0
 sdesc: "Audio processing library for changing tempo, pitch, and playback rate (utility)"
 ldesc: "SoundTouch is an open-source audio processing library for
 changing the Tempo, Pitch and Playback Rates of audio streams or files."
