@@ -1,5 +1,5 @@
-category: Audio Libs
-requires: cygwin
+category: Audio
+requires: libgcc1 libstdc++6
 external-source: soundtouch
 sdesc: "Audio processing library for changing tempo, pitch, and playback rate (runtime)"
 ldesc: "SoundTouch is an open-source audio processing library for

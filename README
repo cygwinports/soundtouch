@@ -4,21 +4,22 @@ SoundTouch is an open-source audio processing library for changing the
 Tempo, Pitch and Playback Rates of audio streams or files.
 
 Runtime requirements:
-  cygwin-1.5.22-1
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
-  binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  libtool1.5-1.5.23a-1
-  make-3.81-1
-  sed-4.1.5-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  sed-4.1.5-2
 
 Canonical website:
   http://www.surina.net/soundtouch/
@@ -29,17 +30,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack soundtouch-1.3.1-X-src.tar.bz2
+  unpack soundtouch-1.4.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./soundtouch-1.3.1-X.cygport all
+  cygport ./soundtouch-1.4.0-X.cygport all
 
 This will create:
-  /usr/src/libsoundtouch-devel-1.3.1-X.tar.bz2
-  /usr/src/libsoundtouch0-1.3.1-X.tar.bz2
-  /usr/src/soundtouch-1.3.1-X-src.tar.bz2
-  /usr/src/soundtouch-1.3.1-X.tar.bz2
+  /usr/src/libSoundTouch-devel-1.4.0-X.tar.bz2
+  /usr/src/libSoundTouch0-1.4.0-X.tar.bz2
+  /usr/src/soundtouch-1.4.0-X-src.tar.bz2
+  /usr/src/soundtouch-1.4.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -47,35 +48,30 @@ Files included in the binary packages:
 
 (soundtouch)
   /usr/bin/soundstretch.exe
-  /usr/share/doc/Cygwin/soundtouch-1.3.1.README
-  /usr/share/doc/soundtouch-1.3.1/COPYING.TXT
-  /usr/share/doc/soundtouch-1.3.1/html/README.html
+  /usr/share/doc/soundtouch/COPYING.TXT
+  /usr/share/doc/soundtouch/html/README.html
 
-(libsoundtouch0)
-  /usr/bin/cygBPM-0.dll
+(libSoundTouch0)
   /usr/bin/cygSoundTouch-0.dll
 
-(libsoundtouch-devel)
+(libSoundTouch-devel)
   /usr/include/soundtouch/BPMDetect.h
   /usr/include/soundtouch/FIFOSampleBuffer.h
   /usr/include/soundtouch/FIFOSamplePipe.h
   /usr/include/soundtouch/STTypes.h
   /usr/include/soundtouch/SoundTouch.h
   /usr/include/soundtouch/soundtouch_config.h
-  /usr/lib/libBPM.a
-  /usr/lib/libBPM.dll.a
-  /usr/lib/libBPM.la
   /usr/lib/libSoundTouch.a
   /usr/lib/libSoundTouch.dll.a
   /usr/lib/libSoundTouch.la
-  /usr/lib/pkgconfig/soundtouch-1.0.pc
+  /usr/lib/pkgconfig/soundtouch-1.4.pc
   /usr/share/aclocal/soundtouch.m4
 
 ------------------
 
 Port Notes:
 
------ version 1.3.1-1 -----
+----- version 1.4.0-1 -----
 Initial release for Cygwin.
 
 

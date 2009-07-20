@@ -1,0 +1,10 @@
+--- origsrc/soundtouch/source/SoundTouch/Makefile.am	2009-01-25 10:32:53.000000000 -0600
++++ src/soundtouch/source/SoundTouch/Makefile.am	2009-07-20 14:17:38.101883200 -0500
+@@ -32,6 +32,7 @@ lib_LTLIBRARIES=libSoundTouch.la
+ #
+ libSoundTouch_la_SOURCES=AAFilter.cpp FIRFilter.cpp FIFOSampleBuffer.cpp mmx_optimized.cpp sse_optimized.cpp RateTransposer.cpp SoundTouch.cpp TDStretch.cpp cpu_detect_x86_gcc.cpp BPMDetect.cpp PeakFinder.cpp
+ 
++libSoundTouch_la_LDFLAGS = -no-undefined
+ 
+ # Note by authore: '-msse2' might not work in non-X86 compilations. If someone can
+ # fix this script to automatically check for CPU architecture, please submit a patch 
