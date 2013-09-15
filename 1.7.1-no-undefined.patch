@@ -1,0 +1,8 @@
+--- origsrc/soundtouch/source/SoundTouch/Makefile.am	2012-12-28 14:56:45.000000000 -0600
++++ src/soundtouch/source/SoundTouch/Makefile.am	2013-09-15 14:25:45.662823600 -0500
+@@ -30,4 +30,5 @@ lib_LTLIBRARIES=libSoundTouch.la
+ #
+ libSoundTouch_la_SOURCES=AAFilter.cpp FIRFilter.cpp FIFOSampleBuffer.cpp RateTransposer.cpp SoundTouch.cpp TDStretch.cpp cpu_detect_x86.cpp BPMDetect.cpp PeakFinder.cpp
++libSoundTouch_la_LDFLAGS = -no-undefined
+ 
+ # Compiler flags
