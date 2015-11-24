@@ -1,5 +1,5 @@
 NAME="soundtouch"
-VERSION=1.7.1
+VERSION=1.9.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Audio processing library for changing tempo, pitch, and playback rate"
@@ -8,13 +8,13 @@ changing the Tempo, Pitch and Playback Rates of audio streams or files."
 HOMEPAGE="http://www.surina.net/soundtouch/"
 SRC_URI="${HOMEPAGE}/${NAME}-${VERSION}.tar.gz"
 SRC_DIR=${NAME}
-PATCH_URI="1.7.1-no-undefined.patch"
+PATCH_URI="1.9.2-no-undefined.patch"
 
-PKG_NAMES="${NAME} libSoundTouch0 libSoundTouch-devel"
+PKG_NAMES="${NAME} libSoundTouch1 libSoundTouch-devel"
 soundtouch_CATEGORY="Audio"
 soundtouch_SUMMARY=${SUMMARY/library/utilities}
 soundtouch_CONTENTS='usr/bin/*.exe usr/share/doc/'
-libSoundTouch0_CONTENTS='usr/bin/*.dll'
+libSoundTouch1_CONTENTS='usr/bin/cygSoundTouch-1.dll'
 libSoundTouch_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/'
 
 src_install() {
