@@ -1,14 +1,6 @@
 --- origsrc/soundtouch/source/SoundTouch/Makefile.am	2015-11-24 12:18:43.032948600 -0600
 +++ src/soundtouch/source/SoundTouch/Makefile.am	2015-11-24 12:23:22.717464000 -0600
-@@ -29,7 +29,6 @@ noinst_HEADERS=AAFilter.h cpu_detect.h c
- lib_LTLIBRARIES=libSoundTouch.la
- #
- libSoundTouch_la_SOURCES=AAFilter.cpp FIRFilter.cpp FIFOSampleBuffer.cpp    \
--libSoundTouch_la_LDFLAGS = -no-undefined
-     RateTransposer.cpp SoundTouch.cpp TDStretch.cpp cpu_detect_x86.cpp      \
-     BPMDetect.cpp PeakFinder.cpp InterpolateLinear.cpp InterpolateCubic.cpp \
-     InterpolateShannon.cpp
-@@ -67,7 +66,7 @@ libSoundTouchSSE_la_CXXFLAGS = $(AM_CXXF
+@@ -67,7 +67,7 @@ libSoundTouchSSE_la_CXXFLAGS = $(AM_CXXF
  endif
  
  # Modify the default 0.0.0 to LIB_SONAME.0.0
