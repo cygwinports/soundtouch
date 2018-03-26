@@ -1,5 +1,5 @@
 NAME="soundtouch"
-VERSION=1.9.2
+VERSION=2.0.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Audio processing library for changing tempo, pitch, and playback rate"
